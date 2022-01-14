@@ -1,6 +1,6 @@
-# gen-eth-key
+## gen-eth-key
 
-## How to Run ?
+### How to Run ?
 ```
 git clone https://github.com/aditya-manit/gen-eth-key.git && cd gen-eth-key/
 chmod +x gen_eth_key
