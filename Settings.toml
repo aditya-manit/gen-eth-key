@@ -1,0 +1,36 @@
+# Default configurations for the CFE
+[node_p2p]
+node_key_file = "/etc/chainflip/keys/node_key_file"
+ip_address = "5.78.69.163"
+port = "8078"
+
+[state_chain]
+ws_endpoint = "ws://127.0.0.1:9944"
+signing_key_file = "/etc/chainflip/keys/signing_key_file"
+
+[eth]
+# Ethereum private key file path. This file should contain a hex-encoded private key.
+private_key_file = "/etc/chainflip/keys/ethereum_key_file"
+
+[eth.rpc]
+ws_endpoint = "wss://rpc.ankr.com:443/eth/ws/6d2b598d44a85d63e3f1f161ac29f87e1e16a2462e3fd9bde82e1a6629e4bf28"
+http_endpoint = "https://rpc.ankr.com:443/eth/6d2b598d44a85d63e3f1f161ac29f87e1e16a2462e3fd9bde82e1a6629e4bf28"
+
+# Optional
+# [eth.backup_rpc]
+# ws_endpoint = "wss://some_public_rpc.com:443/<secret_access_key>"
+# http_endpoint = "https://some_public_rpc.com:443/<secret_access_key>"
+
+[dot.rpc]
+ws_endpoint = "wss://polkadot.api.onfinality.io:443/ws?apikey=8d3a0fdd-54e3-40a0-a377-0f85bb20ec36" # Make sure to include the port number for both endpoints
+http_endpoint = "https://polkadot.api.onfinality.io:443/rpc?apikey=8d3a0fdd-54e3-40a0-a377-0f85bb20ec36"
+
+# Optional
+# [dot.backup_rpc]
+# ws_endpoint = "wss://my_dot_rpc_backup.someprovider.xyz:443"
+# http_endpoint = "https://my_dot_rpc_backup.someotherprovider.xyz:443"
+
+[btc.rpc]
+basic_auth_user = "flip"
+basic_auth_password = "flip"
+http_endpoint = "https://bitcoin-mainnet-archive.allthatnode.com"
